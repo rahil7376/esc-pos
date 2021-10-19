@@ -52,7 +52,7 @@ func (e *Escpos) Writeln(text string) {
 	e.Write(text + "\n")
 }
 
-func (e *Escpos) sendMoveX(x uint16) {
+func (e *Escpos) SendMoveX(x uint16) {
 	e.Write(string([]byte{0x1b, 0x24, byte(x % 256), byte(x / 256)}))
 }
 
