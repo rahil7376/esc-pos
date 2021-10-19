@@ -54,7 +54,7 @@ func (e *Escpos) Writeln(text string) {
 
 // To MOve X
 func (e *Escpos) SendMoveX(x uint16) {
-	e.Write(string([]byte{0x1b, 0x24, byte(x % 256), byte(x / 256)}))
+	e.Write(string([]byte{esc, 0x24, byte(x % 256), byte(x / 256)}))
 }
 
 // New create new Escpos struct and set default enconding
