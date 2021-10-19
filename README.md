@@ -4,7 +4,7 @@ Golang package for handling ESC-POS thermal printer commands
 ## Instalation
 
 ```bash
-go get -u github.com/augustopimenta/escpos
+go get -u github.com/rahil7376/esc-pos
 ```
 
 ## Usage example
